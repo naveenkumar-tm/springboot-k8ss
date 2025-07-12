@@ -1,0 +1,8 @@
+image:
+  repository: springboot-app
+  tag: latest
+  pullPolicy: Never
+
+service:
+  type: ClusterIP
+  port: 8080
