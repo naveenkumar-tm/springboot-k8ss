@@ -4,5 +4,5 @@ image:
   pullPolicy: Never
 
 service:
-  type: ClusterIP
+  type: LoadBalancer
   port: 8080
