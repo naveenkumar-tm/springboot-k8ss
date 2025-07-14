@@ -27,12 +27,6 @@ pipeline {
             }
         }
 
-        stage('Load to Minikube') {
-            steps {
-                sh "minikube image load ${IMAGE_NAME}:${IMAGE_TAG}"
-            }
-        }
-
         stage('Deploy to Kubernetes with Helm') {
             steps {
                 sh """
